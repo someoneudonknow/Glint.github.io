@@ -1,0 +1,176 @@
+@import url(../base.css);
+
+.header-section{
+    display: flex;
+    align-items: center;
+    height: 9.6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.header-brand{
+    width: 8rem;
+    margin-left: 3.8rem;
+}
+
+.header-brand img{
+    width: 100%;
+}
+
+.menu-toggle-btn{
+    color: var(--white-color);
+    position: fixed;
+    right: 3.8rem;
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all linear .3s;
+}
+
+.menu-toggle-btn h3{
+    font-size: 1.3rem;
+    letter-spacing: 0.25rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    padding-left: 1.2rem;
+    transition:all .4s;
+    color: var(--primary-green);
+}
+
+.menu-toggle__icon{
+    padding: 1.2rem;
+}
+
+.menu-toggle__icon i{
+    color: var(--white-color);
+    font-size: 2.5rem;
+}
+
+.menu-toggle-btn:hover h3{
+    color: var(--white-color);
+}
+
+/* sidebar */
+
+.sidebar{
+    position: fixed;
+    background-color: rgb(12, 12, 12);
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 28rem;
+    padding: 3.6rem 3rem 3.6rem 3.6rem;
+    color: white;
+    transform: translateX(100%);
+    transition: all ease .5s;
+    z-index: 5 !important;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar__close-btn{
+   position: absolute;
+   top: 4.7rem;
+   right: 2.9rem;
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+}
+
+.sidebar__close-btn i{
+    font-size: 1.5rem;
+}
+
+.sidebar__header{
+    line-height: 1.5;
+    margin-top: 0.9rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    color: var(--primary-green);
+    margin-bottom: 4.8rem;
+    font-weight: bold;
+}
+
+.sidebar__content{
+    padding-bottom: 1.8rem;
+}
+
+.sidebar-content__item {
+    line-height: 4.5rem;
+}
+
+.sidebar-content__item a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.sidebar__text{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.sidebar__text a{
+    text-decoration: none;
+    color: #7e817e;
+}
+
+.sidebar__text a:hover {
+    transition: .3s;
+    color: var(--white-color);
+}
+
+.sidebar__social{
+    margin-top: 2.7rem;
+    display: flex;
+}
+
+.sidebar__social-item{
+    margin-right: 1.2rem;
+}
+
+.sidebar__social-item a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 1.7rem;
+}
+
+.sidebar__social-item:hover a{
+    transition: .3s;
+    color: var(--white-color);
+}
+
+/* sidebar animation */
+.sidebar.slide-in {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.sidebar .sidebar__main{
+    visibility: hidden;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all ease .5s;
+    transition-delay: .2s;
+}
+
+.sidebar.slide-in .sidebar__main{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+@media (max-width: 500px) {
+  
+}
+

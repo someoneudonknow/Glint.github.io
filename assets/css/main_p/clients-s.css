@@ -1,0 +1,173 @@
+@import url(../base.css);
+
+#clients {
+    background-color:  rgb(230, 230, 230);
+    padding-top: 16.2rem;
+    padding-bottom: 16.8rem;
+    position: relative;
+}
+
+#clients .row .col-md-12 .sub-heading {
+    color: var(--primary-green);
+}
+
+#clients .row .col-md-12 .main-heading {
+    font-size: 5.2rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    margin-bottom: 3.6rem;
+}
+
+#clients .row .col-md-12 .clients-brands-carousel{
+    
+}
+
+#clients .row .col-md-12 .carousel-list{
+    overflow-x: auto;
+}
+
+#clients .row .col-md-12 .clients-brands-carousel .brands-carousel-item{
+    width: 19.4rem;
+    text-decoration: none;
+    padding: 1.5rem 2.8rem;
+    display: inline-block;
+    background-color: transparent;
+}
+
+#clients .row .col-md-12 .clients-brands-carousel .brands-carousel-item img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    visibility: inherit;
+    opacity: .4;
+    transition: all ease-in-out .4s;
+}
+
+#clients .row .col-md-12 .clients-brands-carousel .brands-carousel-item:hover img {
+    opacity: 1;
+}
+
+#clients .row .col-md-12 hr{
+    border-color: #0000001A;
+}
+
+.feedback-carousel{
+    padding-top: 3.6rem;
+    padding: auto 2rem;
+}
+
+.feedback-carousel .feedback-content{
+    position: relative;
+}
+
+.feedback-content-item{
+    padding: 0 9rem 3rem 9rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.content-text{
+    font-size: 3.3rem;
+    color: var(--text-color);
+    font-family: var(--lora);
+    margin-bottom: 6rem;
+    line-height: 1.7;
+}
+
+.content-profile{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    min-width: 8.4rem;
+    font-size: 1.7rem;
+    line-height: 1.7;
+}
+
+.profile-avatar{
+    margin: 0 auto;
+    width: 8.4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1.2rem;
+}
+
+.card-text{
+    font-size: 1.4rem;
+    color: #757575;
+}
+
+#clients .divide-line{
+    background-color: var(--primary-green);
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 1200px) {
+    #clients .row .col-md-12 .main-heading {
+        font-size: 4.4rem;
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+
+    .feedback-carousel .content-text {
+        font-size: 2.6rem;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+
+   
+}
+
+@media only screen and (max-width: 992px) {
+
+
+    .feedback-carousel .content-text {
+        font-size: 2.2rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+   
+}
+
+@media only screen and (max-width: 768px) {
+    #clients .row .col-md-12 .main-heading {
+        font-size: 4.4rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .feedback-carousel .content-text {
+        font-size: 2.2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .feedback-content-item{
+        padding: 0 4rem 3rem 4rem;
+    }
+
+    #clients {
+        padding-bottom: 13rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #clients .row .col-md-12 .main-heading {
+        font-size: 3.3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    #clients {
+        padding-top: 12rem;
+    }
+
+    .feedback-content-item{
+        padding: 0 0rem 3rem 0rem;
+    }
+}

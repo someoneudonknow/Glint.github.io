@@ -1,0 +1,90 @@
+.clients-brands-carousel ul.slick-dots{
+    margin-top: 3rem;
+    margin-bottom: 7.7rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.clients-brands-carousel .slick-dots li button {
+    background-color: #959595;
+    border-radius: 50%;
+    border: none;
+    width: 1rem;
+    height:1rem;
+    margin: 0.9rem;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.clients-brands-carousel .slick-dots li.slick-active button{
+    background-color: #39b54a;
+}
+
+.feedback-carousel .slick-prev {
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    border: none;
+    outline: none;
+    height: 6.6rem;
+    width: 6.6rem;
+    background:  url(../../images/icons/arow-left-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.2rem 1.5rem;
+    font-size: 0;
+    left: 0;
+    top: 6rem;
+}
+
+.feedback-carousel .slick-next {
+    z-index: 1;
+    display: inline-block;
+    position: absolute;
+    border: none;
+    outline: none;
+    height: 6.6rem;
+    width: 6.6rem;
+    background:  url(../../images/icons/arow-right-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.2rem 1.5rem;
+    font-size: 0;
+    top: 6rem;
+    right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .feedback-carousel .slick-prev{
+        left: 3.5rem;
+    }
+
+    .feedback-carousel .slick-next {
+        right: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .feedback-content ul.slick-dots {
+        list-style: none !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feedback-content .slick-dots li button {
+        background-color: #959595;
+        border-radius: 50%;
+        border: none;
+        width: 1rem;
+        height:1rem;
+        margin: 0.9rem;
+        cursor: pointer;
+        font-size: 0;
+    }
+
+    .feedback-content .slick-dots li.slick-active button{
+        background-color: #39b54a;
+    }
+}

@@ -1,0 +1,133 @@
+@import url(../base.css);
+
+#about{
+    position: relative;
+    padding: 15.6rem 2.5rem 9rem;
+    background-color: var(--primary-green);
+}
+
+#about .divide-line{
+    top: 0;
+    background-color: var(--white-color);
+}
+
+#about .row {
+    margin: 0 auto;
+}
+
+#about .row .col-md-12 .greeting-text {
+    color: var(--black-color);
+    margin: 0;
+}
+
+#about .row .col-md-12 h1 {
+    font-size: 7.8rem;
+    color: var(--white-color);
+}
+
+#about .row .col-md-12 .about-text-content{
+    font-family: var(--lora);
+    font-size: 2.4rem;
+    text-align: center;
+    padding:0 8rem;
+    line-height: 1.9;
+}
+
+#about .row .col-lg-3 {
+    padding: 0 2rem;
+    margin: 5.4rem 0;
+    text-align: center;
+    position: relative;
+}
+
+#about .row .col-lg-3:not(.col-lg-3:last-child)::after {
+    content: "";
+    width: 0.1rem;
+    height: calc(100% - 1rem);
+    background-color: #FFFFFF40;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+#about .divide-line{
+    width: 0.2rem !important;
+    top: 0;
+    right: 7.2rem;
+    background-color: var(--white-color);
+}
+
+#about .row .col-lg-3 .number{
+    font-size: 8.4rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+#about .row .col-lg-3 .achieved {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1.8 0 1.5;
+}
+
+/* break point  */
+@media only screen and (max-width: 576px) {
+    #about {
+        padding-top: 12rem;
+    }
+
+    #about .row .col-lg-3:first-child::after{
+        display: none;
+    }
+
+    #about .row .col-lg-3:last-child::after{
+        content: "";
+        height: calc(100% - 1rem);
+        background-color: #FFFFFF40;
+        position: absolute;
+    }
+
+    #about .row .col-lg-3:not(.col-lg-3:first-child)::after{
+        width: 25rem;
+        height: 0.1rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block !important;
+    }
+
+    #about .row .col-md-12 .about-text-content{
+        font-size: 1.8rem;
+        padding:0 1rem !important;
+        line-height: 1.5;
+    }
+
+    #about .row .col-md-12 h1{
+        font-size: 5rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #about .row .col-md-12 h1{
+        font-size: 6.5rem;
+    }
+
+    #about .row .col-md-12 .about-text-content{
+        font-size: 2rem;
+        padding:0 4rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #about .row .col-lg-3 {
+        margin: 1.5rem 0;
+    }
+
+    #about .row .col-lg-3:nth-child(2n + 1)::after{
+        right: 0;
+    }
+
+    #about .row .col-lg-3:nth-child(2n)::after{
+        display: none;
+    }
+}

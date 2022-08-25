@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/icons8-leaf-30.png">
+    <!-- jquery -->
+    <script defer src="./assets/Javascript/jquery/jquery-3.6.0.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Cabin:ital,wght@0,430;0,700;1,400;1,500;1,600;1,700&family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;1,500;1,700&family=Montserrat:wght@500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,700&family=Poppins:wght@100;200;300;400;500;600&family=Radio+Canada&family=Roboto:ital,wght@0,700;0,900;1,500&family=Rokkitt:wght@100;200;400;500;600;700;800;900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- main js -->
+    <script defer src="./assets/Javascript/main.js" type="module"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Glint</title>
+</head>
+<body>
+    <div class="goto-top-wrapper">
+        <a href="#" class="goto-top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    <header class="header-section">
+        <a class="header-brand" href="#"><img src="./assets/images/icons/navbar-logo.png" alt="header logo"></a>
+        <div class="menu-toggle-btn">
+            <h3 class="text-uppercase">menu</h3>
+            <span class="menu-toggle__icon">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+        </div>
+        <nav class="sidebar" style="z-index: 1000;">
+            <div class="sidebar__close-btn" style="z-index: 1;">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="sidebar__main">
+                <h3 class="sidebar__header text-uppercase">navigation</h3>
+                <ul class="sidebar__content">
+                    <li class="sidebar-content__item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="sidebar-content__item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="sidebar-content__item">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="sidebar-content__item">
+                        <a href="#works">Works</a>
+                    </li>
+                    <li class="sidebar-content__item">
+                        <a href="#clients">Clients</a>
+                    </li>
+                    <li class="sidebar-content__item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="sidebar__text">
+                    Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href="#">voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.
+                </p>
+                <ul class="sidebar__social">
+                    <div class="sidebar__social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar__social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar__social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar__social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </div>
+                    <div class="sidebar__social-item">
+                        <a href="#">
+                            <i class="fa-brands fa-dribbble"></i>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container-fluid">
+            <div class="row mx-auto justify-content-lg-start justify-content-sm-center">
+                <div class="col-lg-8">
+                    <p class="text-uppercase animate slide-left">welcome to clint</p>
+                    <h1 class="slide-left animate">We are a creative group
+                        of people who design
+                        influential brands and
+                        digital experiences.
+                    </h1>
+                    <div class="animate slide-up">
+                        <a class="col-sm-12 col-lg-auto col-md-auto btn btn-stroke home-btn">start a project</a>
+                        <a href="#about" class="col-sm-12 col-lg-auto col-md-auto btn btn-stroke home-btn ">more about</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="#" class="social-item__link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <span>Facebook</span>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-item__link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <span>Twitter</span>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-item__link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <span>Instagram</span>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-item__link">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                    <span>Behance</span>
+                </li>
+                <li class="social-item">
+                    <a href="#" class="social-item__link">
+                        <i class="fa-brands fa-dribbble"></i>
+                    </a>
+                    <span>Dribbble</span>
+                </li>
+            </ul>
+            <div class="scroll-down-btn">
+                <a href="#about" class="text-uppercase">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <span>scroll down</span>
+                </a>
+            </div>
+            <div class="divide-line"></div>
+        </section>
+
+        <section id="about" class="container-fluid">
+            <div class="divide-line"></div>
+            <div class="row text-center">
+                <div class="col-md-12 p-0">
+                    <h3 class="animate slide-up text-uppercase sub-heading">Hello there</h3>
+                    <h1 class="animate slide-up main-heading text-capitalize">We are Glint</h1>
+                    <hr class="primary-hr">
+                    <p class="animate slide-up about-text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="animate slide-up delay-1 col-lg-3 col-xxl-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="number">127</div>
+                    <p class="achieved">Awards Received</p>
+                </div>
+                <div class="animate slide-up delay-4 col-lg-3 col-xxl-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="number">1505</div>
+                    <p class="achieved">Cups of Coffee</p>
+                </div>
+                <div class="animate slide-up delay-7 col-lg-3 col-xxl-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="number">109</div>
+                    <p class="achieved">Projects Completed</p>
+                </div>
+                <div class="animate slide-up delay-10 col-lg-3 col-xxl-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="number">102</div>
+                    <p class="achieved">Happy Clients</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="container-fluid text-center">
+            <div class="row text-center animate slide-up">
+                <div class="col-md-12">
+                    <h3 class="sub-heading text-uppercase">what we do</h3>
+                    <h1 class="main-heading">We’ve got everything you need to launch and grow your business</h1>
+                    <hr class="primary-hr">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 animate slide-left delay-1">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-brush"></i>
+                    </span>
+                    <span class="services-text">
+                        <h3>Brand Identity</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </span>
+                </div>
+                <div class="col-md-6 animate slide-right delay-2">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-object-group"></i>
+                    </span>
+                    <span class="services-text">
+                        <h3>Illustration</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </span>
+                </div>
+                <div class="col-md-6 animate slide-left delay-3">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </span>
+                    <span class="services-text">
+                        <h3>Marketing</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </span>
+                </div>
+                <div class="col-md-6 animate slide-right delay-4">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </span>
+                    <span class="services-text">
+                        <h3>Web Design</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </span>
+                </div>
+                <div class="col-md-6 animate slide-left delay-5">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-cube"></i>
+                    </span>
+                    <span class="services-text">
+                        <h3>Packaging Design</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </span>
+                </div>
+                <div class="col-md-6 animate slide-right delay-6">
+                    <span class="services-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </span>
+                    <span class="services-text">
+                        <h3>Web Development</h3>
+                        <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint.</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="intro container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-12 animate slide-up">
+                        <h3 class="sub-heading">RECENT WORKS</h3>
+                        <h1 class="main-heading">We love what we do, check out some of our latest works</h1>
+                        <hr class="primary-hr">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="row p-0">
+                            <div class="col-md-12 p-0 animate slide-up">
+                                <img src="./assets/images/portfolio/pfl3.jpg" alt="" class="gallery-img img-fluid">
+                                <div class="img-overlay">
+                                    <div class="overlay-link">
+                                        <a href="#">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="overlay-center-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span class="over-lay-des">
+                                        <h3 class="des-heading">Shuterbug</h3>
+                                        <p class="des-text">Branding</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 p-0 animate slide-up">
+                                <img src="./assets/images/portfolio/pfl5.jpg" alt="" class="gallery-img img-fluid">
+                                <div class="img-overlay">
+                                    <div class="overlay-link">
+                                        <a href="#">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="overlay-center-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span class="over-lay-des">
+                                        <h3 class="des-heading">Shuterbug</h3>
+                                        <p class="des-text">Branding</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 p-0 animate slide-up">
+                                <img src="./assets/images/portfolio/pfl2.jpg" alt="" class="gallery-img img-fluid">
+                                <div class="img-overlay">
+                                    <div class="overlay-link">
+                                        <a href="#">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="overlay-center-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span class="over-lay-des">
+                                        <h3 class="des-heading">Shuterbug</h3>
+                                        <p class="des-text">Branding</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row p-0">
+                            <div class="col-md-12 p-0 animate slide-up">
+                                <img src="./assets/images/portfolio/pfl6.jpg" alt="" class="gallery-img img-fluid">
+                                <div class="img-overlay">
+                                    <div class="overlay-link">
+                                        <a href="#">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="overlay-center-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span class="over-lay-des">
+                                        <h3 class="des-heading">Shuterbug</h3>
+                                        <p class="des-text">Branding</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 p-0 animate slide-up">
+                                <img src="./assets/images/portfolio/pfl1.jpg" alt="" class="gallery-img img-fluid">
+                                <div class="img-overlay">
+                                    <div class="overlay-link">
+                                        <a href="#">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="overlay-center-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span class="over-lay-des">
+                                        <h3 class="des-heading">Shuterbug</h3>
+                                        <p class="des-text">Branding</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12 p-0 animate slide-up">
+                                <img src="./assets/images/portfolio/pfl4.jpg" alt="" class="gallery-img img-fluid">
+                                <div class="img-overlay">
+                                    <div class="overlay-link">
+                                        <a href="#">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="overlay-center-icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                    <span class="over-lay-des">
+                                        <h3 class="des-heading">Shuterbug</h3>
+                                        <p class="des-text">Branding</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h3 class="sub-heading animate slide-up">our clients</h3>
+                    <h1 class="main-heading animate slide-up">Glint has been honored to partner up with these clients</h1>
+                    <div class="clients-brands-carousel text-center animate delay-3 slide-between">
+                        <div class="carousel-list">
+                            <a href="#" class="brands-carousel-item">
+                                <img src="./assets/images/clients/cl1.png" alt="error">
+                            </a>
+                            <a href="#" class="brands-carousel-item">
+                                <img src="./assets/images/clients/cl2.png" alt="error">
+                            </a>
+                            <a href="#" class="brands-carousel-item">
+                                <img src="./assets/images/clients/cl3.png" alt="error">
+                            </a>
+                            <a href="#" class="brands-carousel-item">
+                                <img src="./assets/images/clients/cl4.png" alt="error">
+                            </a>
+                            <a href="#" class="brands-carousel-item">
+                                <img src="./assets/images/clients/cl5.png" alt="error">
+                            </a>
+                            <a href="#" class="brands-carousel-item">
+                                <img src="./assets/images/clients/cl6.png" alt="error">
+                            </a>
+                            <a href="#" class="brands-carousel-item">
+                                <img src="assets/images/clients/cl7.png" alt="error">
+                            </a>
+                            <a href="#" class="brands-carousel-item">
+                                <img src="assets/images/clients/cl8.png" alt="error">
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="primary-hr">
+                    <div class="feedback-carousel animate delay-3 slide-between">
+                        <ul class="feedback-content">
+                            <li class="feedback-content-item">
+                                <p class="content-text">
+                                    Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
+                                </p>
+                                <div class="card content-profile">
+                                    <img src="./assets/images/avatars/avatar3.jpg" alt="" class="profile-avatar card-img-top">
+                                    <h3 class="card-title">
+                                        Sundar Pichai
+                                    </h3>
+                                    <p class="card-text">
+                                        CEO, Google
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="feedback-content-item">
+                                <p class="content-text">
+                                    Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam. Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                                </p>
+                                <div class="card content-profile">
+                                    <img src="./assets/images/avatars/avatar2.jpg" alt="" class="profile-avatar card-img-top">
+                                    <h3 class="card-title">
+                                        Satya Nadella
+                                    </h3>
+                                    <p class="card-text">
+                                        CEO, Microsoft
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="feedback-content-item">
+                                <p class="content-text">
+                                    Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori. Excepturi nam cupiditate culpa doloremque deleniti repellat.
+                                </p>
+                                <div class="card content-profile">
+                                    <img src="./assets/images/avatars/avatar1.jpg" alt="" class="profile-avatar card-img-top">
+                                    <h3 class="card-title">
+                                        Tim cook
+                                    </h3>
+                                    <p class="card-text">
+                                        CEO, Apple
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="divide-line"></div>
+        </section>
+
+        <section id="contact" class="container-fluid">
+            <div class="divide-line"></div>
+            <div class="row text-center">
+                <div class="col-md-12 contact-content">
+                    <div class="sub-heading animate slide-up delay-2">CONTACT US</div>
+                    <h1 class="main-heading animate slide-up delay-2">Reach out for a new project or just say hello</h1>
+                    <div class="contact-form-wrapper justify-content-center row">
+                        <div class="animate slide-left contact-form col-xl-7 col-md-12 col-lg-7">
+                            <h3 class="contact-form-heading">send us a message</h3>
+                            <form action="">
+                                <div class="form-g">
+                                    <input type="text" placeholder="Your Name">
+                                </div>
+                                <div class="form-g">
+                                    <input type="email" placeholder="Your Email">
+                                </div>
+                                <div class="form-g">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                                <div class="form-g">
+                                    <textarea placeholder="Your Name" rows="7"></textarea>
+                                </div>
+                                <div class="btn btn-green"><span>submit</span></div>
+                            </form>
+                        </div>
+                        <div class="animate slide-right col-xl-3 col-md-12 col-lg-3 contact-info">
+                            <h3 class="contact-info__heading text-uppercase">contact info</h3>
+                            <div class="contact-info__section">
+                                <h3>Where to Find Us</h3>
+                                <p>1600 Amphitheatre Parkway</p>
+                                <p>Mountain View, CA</p>
+                                <p>94043 US</p>
+                            </div>
+                            <div class="contact-info__section">
+                                <h3>Email Us At</h3>
+                                <p>contact@glintsite.com</p>
+                                <p>info@glintsite.com</p>
+                            </div>
+                            <div class="contact-info__section">
+                                <h3>Call Us At</h3>
+                                <p>Phone: (+63) 555 1212</p>
+                                <p>Mobile: (+63) 555 0100</p>
+                                <p>Fax: (+63) 555 0101</p>
+                            </div>
+                            <ul class="contact-info__social">
+                                <li class="contact-info__social-link">
+                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="contact-info__social-link">
+                                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li class="contact-info__social-link">
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="contact-info__social-link">
+                                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                                </li>
+                                <li class="contact-info__social-link">
+                                    <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer container-fluid">
+        <div class="footer-des row justify-content-center">
+            <div class="animate slide-left col-md-6 col-lg-6 col-sm-12 px-sm-4">
+                <span class="footer-logo">
+                    <img src="./assets/images/icons/logo.png" alt="" srcset="">
+                </span>
+                <p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.</p>
+            </div>
+            <div class="animate slide-right col-md-6 col-lg-6 col-sm-12 px-sm-4 subscribe">
+                <h3>Get Notified</h3>
+                <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+                <form action="" class="input-group">
+                    <div class="input-group-prepend">
+                        <img src="./assets/images/icons/email-icon.png" alt="">
+                    </div>
+                    <input type="text" type="email" placeholder="Email Address" class="form-control shadow-none">
+                    <div class="input-group-append">
+                        <div class="btn btn-green"><span>subscribe</span></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row copyright text-center animate slide-between" style="margin-top: 54px;">
+            <div class="col-md-12">
+                <h4 >© Copyright Glint 2022</h4>
+                <h4 >Site Template by <a href="#">Colorlib</a></h4>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

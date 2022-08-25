@@ -1,0 +1,23 @@
+/* slide animation css */
+@import url(./slide-animation/animation.css);
+
+/* base part */
+@import url(base.css);
+
+/* slick slider customize */
+@import url(./slick-slider-custom/custom.css);
+
+/* header part */
+@import url(./header-p/header.css);
+
+/* main part */
+@import url(./main_p/clients-s.css);
+@import url(./main_p/home-s.css);
+@import url(./main_p/about-s.css);
+@import url(./main_p/services-s.css);
+@import url(./main_p/work-s.css);
+@import url(./main_p/contact-s.css);
+
+/* footer part */
+@import url(./footer-p/footer.css);
+

@@ -1,0 +1,101 @@
+/* scroll in view animation */
+
+.slide-left {
+    visibility: hidden;
+    transform: translateX(-200%) !important;
+    opacity: 0;
+    transition: all ease 2s;
+}
+
+.slide-left.start {
+    visibility: visible;
+    transform: translateX(0%) !important;
+    opacity: 1;
+}
+
+.slide-right {
+    visibility: hidden;
+    transform: translateX(200%) !important;
+    opacity: 0;
+    transition: all ease 2s;
+}
+
+.slide-right.start {
+    visibility: visible;
+    transform: translateX(0%) !important;
+    opacity: 1;
+}
+
+.slide-up{
+    transform: translateY(50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all cubic-bezier(.47,0,.745,.715) 1s;
+}
+
+.slide-up.start {
+    visibility: visible;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.appear {
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: left;
+    transition: all ease-in 2s;
+}
+
+.appear.start {
+    visibility: visible;
+    opacity: 1;
+}
+
+.slide-between {
+    clip-path: inset(0 50%);
+    transition: all ease 1.6s;
+}
+
+.slide-between.start {
+    clip-path: inset(0);
+}
+
+.delay-1{
+    transition-delay: 0.1s;
+}
+
+.delay-2{
+    transition-delay: 0.2s;
+}
+
+.delay-3{
+    transition-delay: 0.3s;
+}
+
+.delay-4{
+    transition-delay: 0.4s;
+}
+
+.delay-5{
+    transition-delay: 0.5s;
+}
+
+.delay-6{
+    transition-delay: 0.6s;
+}
+
+.delay-7{
+    transition-delay: 0.7s;
+}
+
+.delay-8{
+    transition-delay: 0.8s;
+}
+
+.delay-9{
+    transition-delay: 0.9s;
+}
+
+.delay-10{
+    transition-delay: 1s;
+}
