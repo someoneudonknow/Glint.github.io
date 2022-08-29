@@ -68,6 +68,49 @@
     border-bottom: 1px solid var(--primary-green);
 }
 
+.contact-form-wrapper .contact-form .form-g {
+    position: relative;
+}
+
+#contactForm .error-message {
+    position: absolute;
+    min-width: 20rem;
+    background-color: var(--primary-green);
+    color: var(--white-color);
+    right: 0rem;
+    bottom: -4px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 0 2rem;
+    line-height: 2.4rem;
+    display: none;
+}
+
+#contactForm .error-message::after {
+   content: "";
+   border-top: 7px solid transparent;
+   border-right: 7px solid var(--primary-green);
+   border-left: 7px solid transparent;
+   border-bottom: 7px solid transparent;
+   position: absolute;
+   right: 99%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+#contactForm .form-g.invalid .error-message{
+    display: block;
+}
+
+#contactForm .form-g.invalid input {
+    border-bottom: 2px solid var(--primary-green);
+}
+
+#contactForm .form-g.invalid textarea{
+    border-bottom: 2px solid var(--primary-green);
+}
+
 .contact-form-wrapper .contact-form .btn{
     margin-top: 3.6rem;
     margin-bottom: 4.2rem;

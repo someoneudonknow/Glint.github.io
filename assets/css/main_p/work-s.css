@@ -1,3 +1,8 @@
+:root {
+    --startPosRight: 0px;
+    --startPosLeft:  0px;
+}
+
 #works {
  overflow: hidden;
 }
@@ -158,6 +163,110 @@
     opacity: 1;
 }
 
+/* img show */
+.image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease .3s;
+    z-index: 1000;
+}
+
+.img-des p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.img-wrapper{
+    overflow: hidden;
+    width: 85.3rem;
+    height: 56.8rem;
+    padding-top: 50%;
+    background: url(../../images/portfolio/pfl2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.img-control {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: var(--white-color);
+}
+
+.next-img{
+    right: 5rem;
+}
+
+.prev-img{
+    left: 5rem;
+}
+
+.image.show{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.counter{
+    font-size: 1.7rem;
+    color: aliceblue;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    display: block;
+    z-index: 2;
+}
+
+
+/* animations */
+@keyframes slide-right {
+    from {
+        transform: translateX(200%);
+    }to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left{
+    from {
+        transform: translateX(-200%);
+    }to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out-left{
+    from {
+        transform: translateX(var(--startPosLeft));
+    }to {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes slide-out-right{
+    from {
+        transform: translateX(var(--startPosRight));
+    }to {
+        transform: translateX(200%);
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     #works .intro h1 {
         font-size: 4.4rem;
@@ -177,5 +286,64 @@
 
     #works .gallery .row{
         padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .image .row{
+        text-align: center;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        height: 54rem;
+        margin: auto;
+    }
+
+    .img-des p{
+        font-size: 1.4rem;
+    }
+
+    .img-des h1{
+        font-size: 2.3rem;
+    }
+
+    .img-control{
+        font-size: 2.5rem;
+    }
+
+    .next-img{
+        right: 3rem;
+    }
+    
+    .prev-img{
+        left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .img-control{
+        font-size: 0;
+        width: 5rem;
+        height: 3rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 0.3rem;
+    }
+
+    .image .row {
+        width: 100%;
+    }
+
+    .img-des p{
+        font-size: 1.2rem;
+        padding: 0 4rem;
+    }
+
+    .img-des h1{
+        font-size: 2rem;
+    }
+
+    .counter {
+        font-size: 1.5rem;
     }
 }
