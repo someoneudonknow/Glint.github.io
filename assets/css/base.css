@@ -16,6 +16,11 @@
     --lora: 'Lora', serif;
 }
 
+html, body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 html {
     font-size: 62.5%;
     font-family: var(--montserrat);
@@ -25,7 +30,6 @@ html {
 
 body {
     min-height: 100vh;
-    overflow-x: hidden;
 }
 
 /* button */
